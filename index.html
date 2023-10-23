@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배우 손상일 프로필</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />  
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <style>
+    *{
+      font-family: 'Pretendard';
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    img{
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+    <main class="container grid grid-cols-1 sm:gap-2 sm:grid-cols-2 m-auto mb-6">
+      <div class="p-3 mb-4 sm:p-0 sm:mb-0">
+        <img class="w-full shadow-lg" src="img/IMG_8101.JPG" alt="손상일 메인 이미지">
+      </div>
+      <div class="p-3 sm:p-4">
+        <h1 class="text-2xl font-extrabold mb-1">손상일 Son sang il</h1>
+        <h2 class="text-xl mb-1">키: 174cm | 몸무게: 63kg</h2>
+        <h2 class="text-xl mb-1">E-mail: tkddlf4320@naver.com</h2>
+        <h2 class="text-xl mb-4">Tel: 010.5193.4320</h2>
+
+        <!-- 경력 -->
+        <div class="border-solid border-2 border-gray-300 p-3 sm:p-2  mb-4">
+          <h2 class="text-xl font-extrabold mb-2">경력사항</h2>
+          <ul>
+            <li>2022 연극 '어른들은 몰라요' - 진우 역</li>
+            <li>2022 연극 '절대사절'</li>
+            <li>2022 연극 '사랑에 관한 다섯가지 소묘'</li>
+            <li>2021 연극 '갈까 말까 망설일 때'</li>
+            <li>2020 연극 '탈랄라 하우스'</li>
+            <li>2020 연극 '청춘 예찬'</li>
+          </ul>
+        </div>
+
+        <!-- 연기영상 -->
+        <!-- <div class="border-solid border-2 border-gray-300 p-1 sm:p-2">
+          <h2 class="text-xl font-extrabold mb-2">연기영상</h2>
+          <ul>
+            <li><a href=""></a></li>
+          </ul>
+        </div> -->
+      </div>
+    </main>
+
+    <section class="container m-auto mb-4 p-3 sm:p-0">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/IMG_8102.JPG" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/IMG_8106.JPG" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/IMG_8104.JPG" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/IMG_8100.JPG" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/IMG_8103.JPG" alt="">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+</body>
+</html>
